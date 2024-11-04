@@ -29,7 +29,7 @@ if (menuCloseButton) {
 window.addEventListener('load', function () {
     const editProducts = this.document.querySelectorAll('table img.edit');
 
-    if (editProducts) {
+    if (editProducts.length > 0) {
         this.document.querySelector('.popup.update-item .close').addEventListener('click', function () {
             document.querySelector('.popup.update-item').classList.remove('active');
         });
@@ -42,16 +42,16 @@ window.addEventListener('load', function () {
 
         const deleteProducts = this.document.querySelectorAll('table img.delete');
 
-    if (deleteProducts) {
-        this.document.querySelector('.popup.delete-item .close').addEventListener('click', function () {
-            document.querySelector('.popup.delete-item').classList.remove('active');
-        });
-
-        deleteProducts.forEach(del => {
-            del.addEventListener('click', function (e) {
-                document.querySelector('.popup.delete-item').classList.add('active');
+        if (deleteProducts.length > 0) {
+            this.document.querySelector('.popup.delete-item .close').addEventListener('click', function () {
+                document.querySelector('.popup.delete-item').classList.remove('active');
             });
-        });
-    }
+
+            deleteProducts.forEach(del => {
+                del.addEventListener('click', function (e) {
+                    document.querySelector('.popup.delete-item').classList.add('active');
+                });
+            });
+        }
     }
 });
