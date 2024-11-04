@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cPanel</title>
+    <link rel="stylesheet" href="../assets/styles/cpanel.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="overlay" role="presentation"></div>
+
+        <aside>
+            <div id="menu-close-button" role="button" class="menu-btn">
+                <img src="../assets/icons/close.png" alt="Menu">
+            </div>
+
+            <div class="logo-container">
+                <img class="logo-image" src="../assets/icons/logo.png" alt="Logo">
+                <h1>CPanel</h1>
+            </div>
+
+            <div class="navigation-block">
+                <h2 class="mini-title">Products</h2>
+                <nav role="navigation">
+                    <ul class="main-navigation">
+                        <li><a href="add-product.html">New Product</a></li>
+                        <li><a href="products.html">List Of Products</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="navigation-block">
+                <h2 class="mini-title">Categories</h2>
+                <nav role="navigation">
+                    <ul class="main-navigation">
+                        <li class="active"><a href="add-category.html">New Category</a></li>
+                        <li><a href="categories.html">List Of Categories</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <main>
+            <section class="main-section">
+                <header role="banner" class="main-header">
+                    <div id="menu-open-button" role="button" class="menu-btn">
+                        <img src="../assets/icons/menu.png" alt="Menu">
+                    </div>
+
+                    <a href="#" class="no-decoration">
+                        <h2>Good Morning, Admin!</h2>
+                    </a>
+                </header>
+
+                <div class="main-content">
+                    <div class="block">
+                        <h3>Create new category</h3>
+
+                        <form>
+                            <fieldset>
+                                <div class="grid-2">
+                                    <div class="fieldset-input">
+                                        <label for="product-name">Name</label>
+                                        <input id="product-name" name="product-name" type="text">
+                                    </div>
+
+                                    <div class="fieldset-input">
+                                        <label for="image-link">Image</label>
+                                        <div>
+                                            <input id="image-link" name="image-link" type="text">
+                                            <button type="button" class="secondary">Upload</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="fieldset-input col-span-2">
+                                        <label for="min-quantity">Min Quantity</label>
+                                        <select id="min-quantity" name="min-quantity">
+                                            <option value="">Select a category</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="fieldset-input col-span-2">
+                                        <div class="label-space"></div>
+                                        <button type="button" class="primary">Submit</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../assets/scripts/cpanel.js"></script>
+</body>
+
+</html>

@@ -250,6 +250,20 @@ fieldset {
     align-items: center;
 }
 
+.col-span-2{
+    grid-column: span 2;
+}
+
+.green-circle{
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    color: white;
+    background-color: var(--green-color);
+    border-radius: 50%;
+}
+
 .fieldset-input div {
     display: flex;
     align-items: center;

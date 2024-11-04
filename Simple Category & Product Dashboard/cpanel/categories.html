@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cPanel</title>
+    <link rel="stylesheet" href="../assets/styles/cpanel.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="overlay" role="presentation"></div>
+
+        <aside>
+            <div id="menu-close-button" role="button" class="menu-btn">
+                <img src="../assets/icons/close.png" alt="Menu">
+            </div>
+
+            <div class="logo-container">
+                <img class="logo-image" src="../assets/icons/logo.png" alt="Logo">
+                <h1>CPanel</h1>
+            </div>
+
+            <div class="navigation-block">
+                <h2 class="mini-title">Products</h2>
+                <nav role="navigation">
+                    <ul class="main-navigation">
+                        <li><a href="add-product.html">New Product</a></li>
+                        <li><a href="products.html">List Of Products</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="navigation-block">
+                <h2 class="mini-title">Categories</h2>
+                <nav role="navigation">
+                    <ul class="main-navigation">
+                        <li><a href="add-category.html">New Category</a></li>
+                        <li class="active"><a href="categories.html">List Of Categories</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <main>
+            <section class="main-section">
+                <header role="banner" class="main-header">
+                    <div id="menu-open-button" role="button" class="menu-btn">
+                        <img src="../assets/icons/menu.png" alt="Menu">
+                    </div>
+
+                    <a href="#" class="no-decoration">
+                        <h2>Good Morning, Admin!</h2>
+                    </a>
+                </header>
+
+                <div class="main-content">
+                    <div class="block">
+                        <h3>List of categories</h3>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Minimum Quantity</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="table-product">
+                                            <div class="image-container">
+                                                <img src="https://mannatthemes.com/rizz/default/assets/images/products/01.png"
+                                                    alt="Product">
+                                            </div>
+                                            <div class="title">Desserts</div>
+                                        </div>
+                                    </td>
+                                    <td class="title">
+                                        <div class="green-circle">10</div>
+                                    </td>
+                                    <td>
+                                        <div class="flex gap10">
+                                            <img role="button" src="../assets/icons/edit.png" alt="Edit"
+                                                class="edit image-button">
+                                            <img role="button" src="../assets/icons/delete.png" alt="Delete"
+                                                class="delete image-button">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div class="popup update-item">
+        <div class="inner">
+            <header>
+                <img class="close" src="../assets/icons/close.png" alt="Close">
+                <img class="main" src="../assets/icons/logo.png" alt="Logo">
+                <h2 class="sub-title">Update Category</h2>
+                <p>Enter category's details and press update!</p>
+            </header>
+
+            <form>
+                <fieldset>
+                    <div>
+                        <div class="fieldset-input col">
+                            <label for="product-name">Name</label>
+                            <input id="product-name" name="product-name" type="text">
+                        </div>
+
+                        <div class="fieldset-input col">
+                            <label for="image-link">Image</label>
+                            <input id="image-link" name="image-link" type="text">
+                            <div class="secondary-container">
+                                <button type="button" class="secondary">Upload</button>
+                            </div>
+                        </div>
+
+                        <div class="fieldset-input col">
+                            <label for="price">Min Quantity</label>
+                            <input id="min-quantity" name="min-quantity" type="text">
+                        </div>
+
+                        <div class="fieldset-input col">
+                            <button type="button" class="primary">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup delete-item">
+        <div class="inner">
+            <header>
+                <img class="close" src="../assets/icons/close.png" alt="Close">
+                <img class="main" src="../assets/icons/logo.png" alt="Logo">
+                <h2 class="sub-title">Delete Category</h2>
+                <p>Would you like to delete this category?</p>
+            </header>
+
+            <form>
+                <fieldset>
+                    <div>
+                        <div class="fieldset-input col">
+                            <button type="button" class="primary red">Delete</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <script src="../assets/scripts/cpanel.js"></script>
+</body>
+
+</html>
